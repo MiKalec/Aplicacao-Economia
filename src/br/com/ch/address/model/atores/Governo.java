@@ -1,6 +1,8 @@
 package br.com.ch.address.model.atores;
 
 import br.com.ch.address.model.concepts.Imposto;
+import br.com.ch.address.model.concepts.PIB;
+import br.com.ch.address.model.concepts.PNB;
 
 import java.util.ArrayList;
 import java.util.List;

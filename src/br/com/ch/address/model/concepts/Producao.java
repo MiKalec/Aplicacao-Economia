@@ -1,8 +1,7 @@
 package br.com.ch.address.model.concepts;
 
-import br.com.ch.address.interfaces.Concept;
 @SuppressWarnings("all")
-public class Producao implements Concept {
+public class Producao{
     private Double custo;
     private Double valor;
     private Imposto imposto;
@@ -57,12 +56,10 @@ public class Producao implements Concept {
         this.valor = valor * porcentagem;
     }
 
-    @Override
     public void aumenta(Double porcentagem) {
 
     }
 
-    @Override
     public void reduz(Double porcentagem) {
 
     }
