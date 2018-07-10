@@ -1,7 +1,7 @@
 package br.com.ch.address.model.concepts;
 
 import br.com.ch.address.interfaces.Concept;
-
+@SuppressWarnings("all")
 public class Producao implements Concept {
     private Double custo;
     private Double valor;
@@ -20,7 +20,7 @@ public class Producao implements Concept {
     }
 
     public void setValor(Double lucroEsperadoPorcentagem, Double custo, Double despesa) {
-        lucroEsperadoPorcentagem = lucroEsperadoPorcentagem /100;
+        lucroEsperadoPorcentagem = (lucroEsperadoPorcentagem / 100);
         lucroEsperadoPorcentagem = lucroEsperadoPorcentagem + 1.0;
         this.valor = (custo + despesa) * lucroEsperadoPorcentagem;
     }
@@ -33,29 +33,37 @@ public class Producao implements Concept {
         this.imposto = imposto;
     }
 
-    @Override
-    public void aumenta() {
+    public void aumentaCusto(Double porcentagem){
+        porcentagem = porcentagem / 100;
+        porcentagem = porcentagem + 1.0;
+        this.custo = custo * porcentagem;
+    }
 
+    public void reduzCusto(Double porcentagem){
+        porcentagem = porcentagem / 100;
+        porcentagem = 1.0 - porcentagem;
+        this.custo = custo * porcentagem;
+    }
+
+    public void aumentaValor(Double porcentagem){
+        porcentagem = porcentagem / 100;
+        porcentagem = porcentagem + 1.0;
+        this.valor = valor * porcentagem;
+    }
+
+    public void reduzValor(Double porcentagem){
+        porcentagem = porcentagem / 100;
+        porcentagem = 1.0 - porcentagem;
+        this.valor = valor * porcentagem;
     }
 
     @Override
-    public void reduz() {
+    public void aumenta(Double porcentagem) {
 
     }
 
-    public void aumentaCusto(){
-
-    }
-
-    public void reduzCusto(){
-
-    }
-
-    public void aumentaValor(){
-
-    }
-
-    public void reduzValor(){
+    @Override
+    public void reduz(Double porcentagem) {
 
     }
 }

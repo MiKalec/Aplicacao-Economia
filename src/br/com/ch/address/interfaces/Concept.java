@@ -2,7 +2,8 @@ package br.com.ch.address.interfaces;
 
 public interface Concept {
 
-    public void aumenta();
+    public void aumenta(Double porcentagem);
 
-    public void reduz();
+    public void reduz(Double porcentagem);
+
 }
