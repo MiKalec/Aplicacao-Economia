@@ -5,6 +5,7 @@ public class Producao{
     private Double custo;
     private Double valor;
     private Imposto imposto;
+    private Inflacao inflacao;
 
     public Double getCusto() {
         return custo;
@@ -48,12 +49,14 @@ public class Producao{
         porcentagem = porcentagem / 100;
         porcentagem = porcentagem + 1.0;
         this.valor = valor * porcentagem;
+        inflacao.historico_de_precos.add(valor);
     }
 
     public void reduzValor(Double porcentagem){
         porcentagem = porcentagem / 100;
         porcentagem = 1.0 - porcentagem;
         this.valor = valor * porcentagem;
+        inflacao.historico_de_precos.add(valor);
     }
 
     public void aumenta(Double porcentagem) {
