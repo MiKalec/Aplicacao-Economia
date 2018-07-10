@@ -74,7 +74,7 @@ public class CalculadoraMicro {
         }
     }
 
-
+    //implementar outros métodos de microeconomia
 
     public void verificaElasticidade() {
         //implementar cálculo de elasticidade

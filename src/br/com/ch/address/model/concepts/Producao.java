@@ -57,10 +57,10 @@ public class Producao{
     }
 
     public void aumenta(Double porcentagem) {
-
+        //implementar lógica de aumento de producao
     }
 
     public void reduz(Double porcentagem) {
-
+        //implementar lógica de reducao de producao
     }
 }

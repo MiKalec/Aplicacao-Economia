@@ -12,4 +12,5 @@ public class Governo {
     private PNB pnb;
     private List<Imposto> impostos= new ArrayList<>();
     private Double valorMoeda;
+    //outros atributos e métodos
 }

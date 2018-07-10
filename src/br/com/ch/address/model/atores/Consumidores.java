@@ -7,12 +7,6 @@ public class Consumidores {
     private double rendaReal;
 
     private double renda;
-  
-    void pagaImposto (Imposto i, Governo g) {
-  
-    
-  
-    }
-
+    //outros atributos e métodos
 
 }
