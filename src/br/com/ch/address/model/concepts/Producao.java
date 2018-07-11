@@ -2,24 +2,24 @@ package br.com.ch.address.model.concepts;
 
 @SuppressWarnings("all")
 public class Producao{
-    private Double custo;
-    private Double valor;
+    private double custo;
+    private double valor;
     private Imposto imposto;
     private Inflacao inflacao;
 
-    public Double getCusto() {
+    public double getCusto() {
         return custo;
     }
 
-    public void setCusto(Double custoMateriaPrima, Imposto imposto, Double custoMaoDeObra) {
+    public void setCusto(double custoMateriaPrima, Imposto imposto, double custoMaoDeObra) {
         this.custo = (custoMateriaPrima + custoMaoDeObra) * imposto.getValorPorcentagem();
     }
 
-    public Double getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(Double lucroEsperadoPorcentagem, Double custo, Double despesa) {
+    public void setValor(double lucroEsperadoPorcentagem, double custo, double despesa) {
         lucroEsperadoPorcentagem = (lucroEsperadoPorcentagem / 100);
         lucroEsperadoPorcentagem = lucroEsperadoPorcentagem + 1.0;
         this.valor = (custo + despesa) * lucroEsperadoPorcentagem;
@@ -33,37 +33,37 @@ public class Producao{
         this.imposto = imposto;
     }
 
-    public void aumentaCusto(Double porcentagem){
+    public void aumentaCusto(double porcentagem){
         porcentagem = porcentagem / 100;
         porcentagem = porcentagem + 1.0;
         this.custo = custo * porcentagem;
     }
 
-    public void reduzCusto(Double porcentagem){
+    public void reduzCusto(double porcentagem){
         porcentagem = porcentagem / 100;
         porcentagem = 1.0 - porcentagem;
         this.custo = custo * porcentagem;
     }
 
-    public void aumentaValor(Double porcentagem){
+    public void aumentaValor(double porcentagem){
         porcentagem = porcentagem / 100;
         porcentagem = porcentagem + 1.0;
         this.valor = valor * porcentagem;
         inflacao.historico_de_precos.add(valor);
     }
 
-    public void reduzValor(Double porcentagem){
+    public void reduzValor(double porcentagem){
         porcentagem = porcentagem / 100;
         porcentagem = 1.0 - porcentagem;
         this.valor = valor * porcentagem;
         inflacao.historico_de_precos.add(valor);
     }
 
-    public void aumenta(Double porcentagem) {
+    public void aumenta(double porcentagem) {
         //implementar lógica de aumento de producao
     }
 
-    public void reduz(Double porcentagem) {
+    public void reduz(double porcentagem) {
         //implementar lógica de reducao de producao
     }
 }
