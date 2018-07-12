@@ -5,7 +5,7 @@ import java.util.*;
 public class Inflacao {
 
 	public final String definicao = "A taxa de inflação é o aumento no nível de preços. "
-			+ "Ou seja, é a média do crescimento dos preços de um conjunto de bens e serviços em um determinado período.";
+            + "Ou seja, é a média do crescimento dos preços de um conjunto de bens e serviços em um determinado período.";
 
 
 	public String gastoPublico(String caso){
@@ -31,16 +31,13 @@ public class Inflacao {
 		return null;
 	}
 
-	public String cartel(String caso){
+	public String producao(String caso){
 		switch(caso){
-
-        }
-		return null;
-	}
-
-	public String producaoBaixa(String caso){
-		switch(caso){
-
+            case"aumenta":
+                return "Caso aumente a produção e ela excede a oferta os preços caem logo a inflação diminui um pouco";
+            case "diminui":
+                return "Se a produção é baixa o volume de dinheiro é maior que a oferta."
+                        +" O consumidor se dispõe a pagar mais pelo mesmo produto e seu valor sobe junto com a inflação";
 		}
 		return null;
 	}
@@ -48,13 +45,18 @@ public class Inflacao {
 	public String Indexacao(String caso){
 		switch(caso){
 
+
 		}
 		return null;
 	}
 
 	public String inercia(String caso){
 		switch(caso){
-
+			case "aumenta":
+				return "Se ambos os preços e o trabalhador pede por reumuneração maior "
+						+"a inflação também chega a aumentar para acomapanhar o acréscimo.";
+			case "diminui":
+				return "Se ";
 		}
 		return null;
 	}
