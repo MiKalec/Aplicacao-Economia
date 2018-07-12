@@ -3,21 +3,8 @@ package br.com.ch.address.model.concepts;
 public class Oferta {
     Demanda demanda = new Demanda();
     public final String definicao = "Oferta eh a quantidade de um produto ou servico disponivel para compra."
-    +" A oferta varia nao soh com a demanda, mas tambem com fatores que influenciam o preco dela."
+            +" A oferta varia nao soh com a demanda, mas tambem com fatores que influenciam o preco dela."
             +"Politicas governamentais, condicoes naturais e o proprio preco do produto podem alterar a curva de demanda de 1 ou mais produtos.";
-
-    public void aumenta(Double porcentagem) {
-        //implementar lógica de aumento de oferta
-    }
-
-    public void reduz(Double porcentagem) {
-        //implementar lógica de reducao de oferta
-    }
-
-    public String getDefinicao() {
-        return definicao;
-    }
-
 
     public String getPrecoOferta(String caso) {
         switch (caso) {
@@ -31,21 +18,21 @@ public class Oferta {
                 return "Para o caso de diminuir o preço o custo se torna menor para ser produzido. " +
                         "Sabendo que esta fortemente atrelado a demanda e por saber que a tendencia eh aumentar o consumo,"
                         + " por causa da diminuicao do preco, a oferta tambem aumenta";
+
+        }
+        return null;
+    }
+
+    public String getImpostoOferta(String caso){
+        switch (caso) {
+            case "aumenta":
+                return "Com o aumento do imposto o custo pela producao aumenta. Logo a disponibilidade diminui no mercado.";
+            case "diminui":
+                return "Com a diminuiçãoo do imposto o custo de producao diminui e se torna mais facil a producao levanda a uma maior oferta.";
         }
         return null;
 
     }
-
-    public String getImpostoOferta(String caso){
-            switch (caso) {
-                case "aumenta":
-                    return "Com o aumento do imposto o custo pela producao aumenta. Logo a disponibilidade diminui no mercado.";
-                case "diminui":
-                    return "Com a diminuiçãoo do imposto o custo de producao diminui e se torna mais facil a producao levanda a uma maior oferta.";
-            }
-
-            return null;
-        }
 
     public String getNaturalCondOferta(String caso) { //condicoes naturais fav para producao
         switch (caso) {
