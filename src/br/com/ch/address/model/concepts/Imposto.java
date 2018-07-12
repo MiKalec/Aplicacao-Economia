@@ -4,8 +4,20 @@ public class Imposto {
 	//private Double valorPorcentagem;
     //outros atributos e mÃ©todos
     
-    private final String definicao = "Taxas obrigatórias pagas ao Estado, que devem reverter à coletividade sob forma de benefícios de interesse geral: transporte, educação,\n" + 
-    		"saúde etc. Historicamente, esse pagamento despontou sob a forma de tributo, exprimindo uma relação de força que um povo vencido devia a seus dominadores. Na Idade Média, prevaleceu a idéia de que o imposto não podia ser estabelecido sem o consentimento dos contribuintes; ou que o imposto era estabelecido a rogo do rei. Seria assim uma ajuda que se oferecia ao soberano, como um complemento de seus recursos normais. Mais tarde essas formas de tributos ganharam o sentido de obrigatoriedade, de coisa imposta; uma imposição que não pode ser exercida sem o consentimento dos contribuintes, consentimento este que, nos regimes representativos, é atribuído ao poder legislativo. A obrigatoriedade dos impostos pode ser entendida em termos de uma relação contratual entre os cidadãos e o Estado, que lhes protege os bens e a própria vida. De acordo com outra teoria, o imposto corresponderia ao preço que o indivíduo paga pelos serviços prestados pelo Estado à coletividade; outros o vêem como uma espécie de dívida social, com a qual os cidadãos teriam de arcar pelo simples fato de fazer parte da comunidade política.";
+    private final String definicao = "Taxas obrigatórias pagas ao Estado, que devem reverter à coletividade" +
+            " sob forma de benefícios de interesse geral: transporte, educação, saúde etc. Historicamente, " +
+            "esse pagamento despontou sob a forma de tributo, exprimindo uma relação de força que um povo " +
+            "vencido devia a seus dominadores. Na Idade Média, prevaleceu a idéia de que o imposto não podia" +
+            " ser estabelecido sem o consentimento dos contribuintes; ou que o imposto era estabelecido a " +
+            "rogo do rei. Seria assim uma ajuda que se oferecia ao soberano, como um complemento de seus " +
+            "recursos normais. Mais tarde essas formas de tributos ganharam o sentido de obrigatoriedade, " +
+            "de coisa imposta; uma imposição que não pode ser exercida sem o consentimento dos contribuintes," +
+            " consentimento este que, nos regimes representativos, é atribuído ao poder legislativo." +
+            " A obrigatoriedade dos impostos pode ser entendida em termos de uma relação contratual entre " +
+            "os cidadãos e o Estado, que lhes protege os bens e a própria vida. De acordo com outra teoria, " +
+            "o imposto corresponderia ao preço que o indivíduo paga pelos serviços prestados pelo Estado à" +
+            " coletividade; outros o vêem como uma espécie de dívida social, com a qual os cidadãos teriam de" +
+            " arcar pelo simples fato de fazer parte da comunidade política.";
 
     public String getDefinicao() {
     	return this.definicao;
