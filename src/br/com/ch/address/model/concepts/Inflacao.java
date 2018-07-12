@@ -13,7 +13,7 @@ public class Inflacao {
 			case "aumenta":
 				return  "Se o governo gasta mais que arrecada isso faz com que uma maior inflação seja necessária para balancear gastos com o que ganha.";
             case "diminui":
-                return "Diminuindo os gastos públicos podem fazer com que as arrecadações superem os gastos tornando maior a receita e tendendo a diminuir a inflação."
+                return "Diminuindo os gastos públicos podem fazer com que as arrecadações superem os gastos tornando maior a receita e tendendo a diminuir a inflação.";
         }
         return null;
     }
@@ -26,7 +26,7 @@ public class Inflacao {
                         + "Se o governo eleva a carga tributária, o preço final dos produtos também aumenta."
                         + "Quando o custo da empresa sobe, ela aumenta os preços.";
             case "diminui":
-                return ""
+                return "";
         }
 		return null;
 	}
