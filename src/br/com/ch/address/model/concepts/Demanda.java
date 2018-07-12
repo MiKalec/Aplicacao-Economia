@@ -1,5 +1,5 @@
 package br.com.ch.address.model.concepts;
-
+@SuppressWarnings("all")
 public class Demanda {
 
     public final String definicao = "Demanda é um conceito subjetivo sobre a quantidade requerida de" +
@@ -23,8 +23,19 @@ public class Demanda {
         return null;
     }
 
-    public void getRendaDemanda() {
-
+    public String getRendaDemanda(String caso) {
+        switch (caso) {
+            case "aumenta":
+                //coloca img na tela
+                return "Aumentando-se a renda, há um consequente aumento na demanda, pois com mais recursos" +
+                        " financeiros, o poder de compra da sociedade aumenta, tendo efeito parecido com a " +
+                        "diminuição de preços";
+            case "diminui":
+                //coloca img na tela
+                return "Diminuindo-se a renda, há uma redução na demanda, pois há a perda de poder aquisitivo" +
+                        " da sociedade, ocasionando menos compras, tendo efeito parecido com o aumento dos preços";
+        }
+        return null;
     }
 
 
