@@ -10,9 +10,9 @@ public class PIB {
         this.valor = valor;
     }
 
-    public calculaPibR(){
+    /*public calculaPibR(){
 
-    }
+    }*/
 
     public double getValor() {
         return valor;
