@@ -2,10 +2,14 @@ package br.com.ch.address.model.concepts;
 @SuppressWarnings("all")
 public class Demanda {
 
-    public final String definicao = "Demanda é um conceito subjetivo sobre a quantidade requerida de" +
+    private final String definicao = "Demanda é um conceito subjetivo sobre a quantidade requerida de" +
             " uma produção qualquer. A Demanda é definida pelo consumidor e diversos fatores podem " +
             "influenciá-la, como variação dos preços dos produtos, variação na renda da sociedade, " +
             "desejo do consumidor, faixa etária e outros muitos fatores.";
+
+    public String getDefinicao() {
+        return definicao;
+    }
 
     public String getPrecoDemanda(String caso) {
         switch (caso) {
@@ -38,18 +42,4 @@ public class Demanda {
         return null;
     }
 
-
-
-
-
-    /*private Oferta oferta = new Oferta();
-    //ver outros atributos e implementar métodos
-
-    public void aumenta(Double porcentagem){
-        //implementar lógica de aumento de demanda
-    }
-
-    public void reduz(Double porcentagem){
-        //implementar lógica de reducao de demanda
-    }*/
 }
