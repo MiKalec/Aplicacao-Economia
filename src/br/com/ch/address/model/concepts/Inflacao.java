@@ -25,7 +25,7 @@ dando origem a uma espiral inflacionária.
 
 public class Inflacao {
 		
-	double indice;
+	/*double indice;
 	double indiceAcumulado;
 	
 	ArrayList<Double> historico_de_precos = new ArrayList<Double>();
@@ -52,12 +52,7 @@ public class Inflacao {
 	
 	public boolean aumentou() {
 		return (historico_ipca.get(historico_ipca.size()-1) > historico_ipca.get(historico_ipca.size()-2));
-	}
-	
-	
-	
-	
-	
-	
+	}*/
+
 
 }
