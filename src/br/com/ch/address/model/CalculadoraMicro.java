@@ -1,13 +1,9 @@
 package br.com.ch.address.model;
 
-import br.com.ch.address.model.concepts.Demanda;
-import br.com.ch.address.model.concepts.Oferta;
-import br.com.ch.address.model.concepts.Producao;
-
 @SuppressWarnings("all")
 public class CalculadoraMicro {
 
-    public void manipulaDemanda(String comando, double porcentagem, Demanda demanda) {
+    /*public void manipulaDemanda(String comando, double porcentagem, Demanda demanda) {
         switch (comando){
             case "aumenta":
                 demanda.aumenta(porcentagem);
@@ -78,5 +74,5 @@ public class CalculadoraMicro {
 
     public void verificaElasticidade() {
         //implementar cálculo de elasticidade
-    }
+    }*/
 }
