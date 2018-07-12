@@ -2,7 +2,8 @@ package br.com.ch.address.model.concepts;
 
 public class PIB {
 
-    public final String definicao = "PIB remete a soma de valor de produtos, bens e serviços sociais de uma determinada região durante um certo período.";
+    public final String definicao = "O PIB é um indicador para medir a atividade econômica do país."
+            +"Ele remete a soma de valor de produtos, bens e serviços sociais de uma determinada região durante um certo período.";
     private double valor;
     private double pibNominal;
     private double pibReal;
