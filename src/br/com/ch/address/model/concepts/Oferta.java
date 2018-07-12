@@ -29,11 +29,26 @@ public class Oferta {
 
     }
 
-    public void getImpostoOferta() {
+    public String getImpostoOferta(String caso){
+            switch (caso) {
+                case "aumenta":
+                    return "Com o aumento do imposto o custo pela producao aumenta. Logo a disponibilidade diminui no mercado.";
+                case "diminui":
+                    return "Com a diminuiçãoo do imposto o custo de producao diminui e se torna mais facil a producao levanda a uma maior oferta.";
+            }
+
+        }
 
     }
 
-    public void getNaturalCondOferta() { //condicoes naturais fav para producao
-
+    public String getNaturalCondOferta(String caso) { //condicoes naturais fav para producao
+        switch (caso) {
+            case "aumenta":
+                return "Melhorando as condições naturais que afetam a produção daquele tipo de produto leva a menor dificuldade e investimento para compensar."
+                        + "Com menor custo envolvendo a produção temos então uma maior oferta dela.";
+            case "diminui":
+                return "Com as condições naturais não sendo a favor para a produção de específico produto temos então aumento nos preços já que isso envolve"
+                        + "mais investimentos para compensar as dificuldades que o ambiente oferece, dessa modo fazendo com que o preco suba e oferta diminua";
+        }
     }
 }
