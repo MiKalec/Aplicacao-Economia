@@ -10,4 +10,5 @@ public class Empresa {
     private String tipo;
     private Producao producao;
     private List<Imposto> impostos = new ArrayList<>();
+    //outros atributos e métodos
 }
