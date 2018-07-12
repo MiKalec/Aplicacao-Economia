@@ -2,57 +2,63 @@ package br.com.ch.address.model.concepts;
 
 import java.util.*;
 
-/*
- INFLAÇÃO DE CUSTOS. Processo inflacionário
-gerado (ou acelerado) pela elevação dos custos
-de produção, especialmente das taxas de juros,
-de câmbio, de salários ou dos preços das
-importações.
- */
-
-/*INFLAÇÃO DE DEMANDA. Também chamada
-de inflação dos compradores, é o processo
-inflacionário gerado pela expansão dos rendimentos.
-Ocorre que os meios de pagamento crescem
-além da capacidade de expansão da economia,
-ou antes que a produção esteja em plena
-capacidade, o que impede que a maior demanda
-decorrente da expansão dos rendimentos seja
-atendida. Com isso, aumentam os preços e, por
-extensão, os salários e os rendimentos em geral,
-dando origem a uma espiral inflacionária.
-*/
-
 public class Inflacao {
-		
-	/*double indice;
-	double indiceAcumulado;
-	
-	ArrayList<Double> historico_de_precos = new ArrayList<Double>();
-	ArrayList<Double> historico_ipca = new ArrayList<Double>();
-	
-	public void setIndices () {
-		if(historico_de_precos.size() < 2) return;
-		else {
-			indice = (historico_de_precos.get(historico_de_precos.size() - 1) / historico_de_precos.get(historico_de_precos.size() - 2))-1;
-			
-			indiceAcumulado = indiceAcumulado + indice;
-			
-			historico_ipca.add(indice);
+
+	public final String definicao = "A taxa de inflaÃ§Ã£o Ã© o aumento no nÃ­vel de preÃ§os. "
+			+ "Ou seja, Ã© a mÃ©dia do crescimento dos preÃ§os de um conjunto de bens e serviÃ§os em um determinado perÃ­odo.";
+
+
+	public String gastoPublico(String caso){
+		switch(caso){
+			case "aumenta":
+				return  "Se o governo gasta mais que arrecada isso faz com que uma maior inflaÃ§Ã£o seja necessÃ¡ria para balancear gastos com o que ganha.";
+            case "diminui":
+                return "Diminuindo os gastos pÃºblicos podem fazer com que as arrecadaÃ§Ãµes superem os gastos tornando maior a receita e tendendo a diminuir a inflaÃ§Ã£o."
+        }
+        return null;
+    }
+
+	public String custoDeProd(String caso){
+		switch(caso){
+            case "aumenta":
+                return "Empresas buscam emprÃ©stimos para viabilizar seus projetos. "
+                        +  "Se as taxas de juros sobem, o custo tambÃ©m sobe."
+                        + "Se o governo eleva a carga tributÃ¡ria, o preÃ§o final dos produtos tambÃ©m aumenta."
+                        + "Quando o custo da empresa sobe, ela aumenta os preÃ§os.";
+            case "diminui":
+                return ""
+        }
+		return null;
+	}
+
+	public String cartel(String caso){
+		switch(caso){
+
+        }
+		return null;
+	}
+
+	public String producaoBaixa(String caso){
+		switch(caso){
+
 		}
+		return null;
 	}
-	
-	public double getIndice() {
-		return this.indice;
+
+	public String Indexacao(String caso){
+		switch(caso){
+
+		}
+		return null;
 	}
-	
-	public double getIndiceAcumulado() {
-		return this.indiceAcumulado;
+
+	public String inercia(String caso){
+		switch(caso){
+
+		}
+		return null;
 	}
-	
-	public boolean aumentou() {
-		return (historico_ipca.get(historico_ipca.size()-1) > historico_ipca.get(historico_ipca.size()-2));
-	}*/
+
 
 
 }
