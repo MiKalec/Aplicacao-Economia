@@ -9,4 +9,13 @@ public class Oferta {
     public void reduz(Double porcentagem) {
         //implementar lógica de reducao de oferta
     }
+    public void getPrecoOferta(){
+
+    }
+    public void getImpostoOferta(){
+
+    }
+    public void getNaturalCondOferta(){ //condicoes naturais fav para producao
+
+    }
 }
