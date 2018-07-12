@@ -14,6 +14,11 @@ public class Oferta {
         //implementar lógica de reducao de oferta
     }
 
+    public String getDefinicao() {
+        return definicao;
+    }
+
+
     public String getPrecoOferta(String caso) {
         switch (caso) {
             case "aumenta":
@@ -26,6 +31,8 @@ public class Oferta {
                 return "Para o caso de diminuir o preço o custo se torna menor para ser produzido. " +
                         "Sabendo que esta fortemente atrelado a demanda e por saber que a tendencia eh aumentar o consumo,"
                         + " por causa da diminuicao do preco, a oferta tambem aumenta";
+        }
+        return null;
 
     }
 
@@ -37,9 +44,8 @@ public class Oferta {
                     return "Com a diminuiçãoo do imposto o custo de producao diminui e se torna mais facil a producao levanda a uma maior oferta.";
             }
 
+            return null;
         }
-
-    }
 
     public String getNaturalCondOferta(String caso) { //condicoes naturais fav para producao
         switch (caso) {
@@ -50,5 +56,6 @@ public class Oferta {
                 return "Com as condições naturais não sendo a favor para a produção de específico produto temos então aumento nos preços já que isso envolve"
                         + "mais investimentos para compensar as dificuldades que o ambiente oferece, dessa modo fazendo com que o preco suba e oferta diminua";
         }
+        return null;
     }
 }
