@@ -5,7 +5,7 @@ import java.util.*;
 public class Inflacao {
 
 	public final String definicao = "A taxa de inflação é o aumento no nível de preços. "
-			+ "Ou seja, é a média do crescimento dos preços de um conjunto de bens e serviços em um determinado período.";
+            + "Ou seja, é a média do crescimento dos preços de um conjunto de bens e serviços em um determinado período.";
 
 
 	public String gastoPublico(String caso){
@@ -13,7 +13,7 @@ public class Inflacao {
 			case "aumenta":
 				return  "Se o governo gasta mais que arrecada isso faz com que uma maior inflação seja necessária para balancear gastos com o que ganha.";
             case "diminui":
-                return "Diminuindo os gastos públicos podem fazer com que as arrecadações superem os gastos tornando maior a receita e tendendo a diminuir a inflação."
+                return "Diminuindo os gastos públicos podem fazer com que as arrecadações superem os gastos tornando maior a receita e tendendo a diminuir a inflação.";
         }
         return null;
     }
@@ -26,21 +26,18 @@ public class Inflacao {
                         + "Se o governo eleva a carga tributária, o preço final dos produtos também aumenta."
                         + "Quando o custo da empresa sobe, ela aumenta os preços.";
             case "diminui":
-                return ""
+                return "";
         }
 		return null;
 	}
 
-	public String cartel(String caso){
+	public String producao(String caso){
 		switch(caso){
-
-        }
-		return null;
-	}
-
-	public String producaoBaixa(String caso){
-		switch(caso){
-
+            case"aumenta":
+                return "Caso aumente a produção e ela excede a oferta os preços caem logo a inflação diminui um pouco";
+            case "diminui":
+                return "Se a produção é baixa o volume de dinheiro é maior que a oferta."
+                        +" O consumidor se dispõe a pagar mais pelo mesmo produto e seu valor sobe junto com a inflação";
 		}
 		return null;
 	}
@@ -48,13 +45,18 @@ public class Inflacao {
 	public String Indexacao(String caso){
 		switch(caso){
 
+
 		}
 		return null;
 	}
 
 	public String inercia(String caso){
 		switch(caso){
-
+			case "aumenta":
+				return "Se ambos os preços e o trabalhador pede por reumuneração maior "
+						+"a inflação também chega a aumentar para acomapanhar o acréscimo.";
+			case "diminui":
+				return "Se ";
 		}
 		return null;
 	}
