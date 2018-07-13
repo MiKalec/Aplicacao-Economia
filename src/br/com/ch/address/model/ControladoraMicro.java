@@ -6,9 +6,10 @@ import br.com.ch.address.model.concepts.Elasticidade;
 import br.com.ch.address.model.concepts.Oferta;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 
-import java.util.ArrayList;
-import java.util.List;
+import javafx.scene.control.ListView;
+
 
 @SuppressWarnings("all")
 public class ControladoraMicro {
@@ -16,11 +17,17 @@ public class ControladoraMicro {
     Demanda demanda = new Demanda();
     Elasticidade elasticidade = new Elasticidade();
 
-    private List<Concepts> listView;
-
+    @FXML
+    private ListView<Concepts> conceitos;
     private ObservableList<Concepts> listViewData = FXCollections.observableArrayList();
 
+    public void initializeList(){
+        listViewData.add(oferta);
+        listViewData.add(demanda);
+        listViewData.add(elasticidade);
 
+        conceitos.setItems(listViewData);
+    }
 
 
 

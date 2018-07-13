@@ -43,10 +43,10 @@ public class Imposto implements Concepts {
 
 	   case "aumenta":
 		   //demanda.getPrecoDemanda(aumenta);
-		   return "Se o imposto sobre um produto aumentar, seu valor de mercado sobe.;
+		   return "Se o imposto sobre um produto aumentar, seu valor de mercado sobe.";
 	   case "diminui":
 		   //demanda.getPrecoDemanda(diminui);
-		   return "Se o imposto sobre um produto diminuir, seu valor de mercado desce, e sua demanda aumenta.;
+		   return "Se o imposto sobre um produto diminuir, seu valor de mercado desce, e sua demanda aumenta.";
 	   }
 	   return null;
    }
