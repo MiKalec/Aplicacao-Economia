@@ -2,13 +2,13 @@ package br.com.ch.address.model.concepts;
 
 import javafx.scene.image.ImageView;
 
-import br.com.ch.address.model.pics;
+//import br.com.ch.address.model.pics;
 
 public class Imposto {
 	//private Double valorPorcentagem;
     //outros atributos e mÃ©todos
 	
-	Image image = new Image(curva_de_laffer.jpg);
+	//Image image = new Image(curva_de_laffer.jpg);
     
     private final String definicao = "Impostos s䯠recursos que o governo retira da sociedade, de modo previsl, para poder fornecer bens p򢬩cos e tocar seus programas de gastos.";
 
@@ -36,10 +36,10 @@ public class Imposto {
 	   
 	   case "aumenta":
 		   //demanda.getPrecoDemanda(aumenta);
-		   return "Se o imposto sobre um produto aumentar, seu valor de mercado sobe.;
+		   return "Se o imposto sobre um produto aumentar, seu valor de mercado sobe.";
 	   case "diminui":
 		   //demanda.getPrecoDemanda(diminui);
-		   return "Se o imposto sobre um produto diminuir, seu valor de mercado desce, e sua demanda aumenta.;
+		   return "Se o imposto sobre um produto diminuir, seu valor de mercado desce, e sua demanda aumenta.";
 	   }
 	   return null;
    }
