@@ -28,10 +28,12 @@ public class Imposto implements Concepts {
     	
     	case "aumenta":
     		//curva de Laffer https://voyager1.net/wp-content/uploads/2017/03/cl-curva-de-laffer-gr%C3%A1fico.jpg
-    		return "Aumentar a alÃ­quota dos impostos, atÃ© certo nÃ­vel, aumenta a arrecadaÃ§Ã£o do governo. A partir desse nÃ­vel, novos aumentos da alÃ­quota passam a gerar menor arrecadaÃ§Ã£o. Esse efeito Ã© a chamada curva de Laffer.";
+    		return "Aumentar a alíquota dos impostos, até certo nível, aumenta a arrecadação do governo. A partir desse" +
+                    " nível, novos aumentos da alíquota passam a gerar menor arrecadação. Esse efeito é a chamada curva de Laffer.";
     	case "diminui":
     		//equivalÃªncia ricardiana
-    		return "Caso o governo diminua a taxa de impostos e mantenha os gastos, acumularÃ¡ dÃ­vidas e terÃ¡ um dÃ©ficit. Assim, inevitavelmente serÃ¡ necessÃ¡rio no futuro o aumento da alÃ­quota.";
+    		return "Caso o governo diminua a taxa de impostos e mantenha os gastos, acumulará dívidas e terá um déficit." +
+                    " Assim, inevitavelmente será necessário no futuro o aumento da alíquota.";
     	}
     	return null;
     }
