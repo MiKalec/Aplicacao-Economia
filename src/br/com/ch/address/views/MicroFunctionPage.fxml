@@ -29,7 +29,8 @@
                   <ImageView fitHeight="214.0" fitWidth="347.0" layoutX="35.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
                   <TextArea layoutX="36.0" layoutY="279.0" prefHeight="97.0" prefWidth="347.0" />
                   <ComboBox layoutX="35.0" layoutY="14.0" prefWidth="150.0" promptText="Subconceitos" />
-                  <Button layoutX="210.0" layoutY="14.0" mnemonicParsing="false" text="OK" />
+                  <Button layoutX="366.0" layoutY="14.0" mnemonicParsing="false" text="OK" />
+                  <ComboBox layoutX="200.0" layoutY="14.0" prefWidth="150.0" promptText="Ação" />
                </children>
             </AnchorPane>
         </items>
