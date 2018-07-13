@@ -26,7 +26,8 @@ public class Inflacao {
                         + "Se o governo eleva a carga tributária, o preço final dos produtos também aumenta."
                         + "Quando o custo da empresa sobe, ela aumenta os preços.";
             case "diminui":
-                return "";
+                return "Com a diminuição do custo de produção se torna mais"
+                        +" fácil manter o nível de produção logo o preço dos produtos caem e inflação diminui.";
         }
 		return null;
 	}
@@ -41,26 +42,6 @@ public class Inflacao {
 		}
 		return null;
 	}
-
-	public String Indexacao(String caso){
-		switch(caso){
-
-
-		}
-		return null;
-	}
-
-	public String inercia(String caso){
-		switch(caso){
-			case "aumenta":
-				return "Se ambos os preços e o trabalhador pede por reumuneração maior "
-						+"a inflação também chega a aumentar para acomapanhar o acréscimo.";
-			case "diminui":
-				return "Se ";
-		}
-		return null;
-	}
-
 
 
 }
