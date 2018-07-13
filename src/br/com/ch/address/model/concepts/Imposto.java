@@ -1,14 +1,14 @@
 package br.com.ch.address.model.concepts;
 
-import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
 
-import br.com.ch.address.model.pics;
+import br.com.ch.address.model.pics.*;
 
 public class Imposto {
 	//private Double valorPorcentagem;
     //outros atributos e mÃ©todos
 	
-	Image image = new Image(curva_de_laffer.jpg);
+	Image image = new Image("curva_de_laffer.jpg");
     
     private final String definicao = "Impostos s䯠recursos que o governo retira da sociedade, de modo previsl, para poder fornecer bens p򢬩cos e tocar seus programas de gastos.";
 
@@ -20,10 +20,10 @@ public class Imposto {
     	switch(caso) {
     	
     	case "aumenta":
-    		//curva de Laffer https://voyager1.net/wp-content/uploads/2017/03/cl-curva-de-laffer-gr%C3%A1fico.jpg
+    		
     		return "Aumentar a alíquota dos impostos, até certo nível, aumenta a arrecadação do governo. A partir desse nível, novos aumentos da alíquota passam a gerar menor arrecadação. Esse efeito é a chamada curva de Laffer.";
     	case "diminui":
-    		//equivalência ricardiana
+    		
     		return "Caso o governo diminua a taxa de impostos e mantenha os gastos, acumulará dívidas e terá um déficit. Assim, inevitavelmente será necessário no futuro o aumento da alíquota.";
     	}
     	return null;
@@ -36,10 +36,10 @@ public class Imposto {
 	   
 	   case "aumenta":
 		   //demanda.getPrecoDemanda(aumenta);
-		   return "Se o imposto sobre um produto aumentar, seu valor de mercado sobe.;
+		   return "Se o imposto sobre um produto aumentar, seu valor de mercado sobe.";
 	   case "diminui":
 		   //demanda.getPrecoDemanda(diminui);
-		   return "Se o imposto sobre um produto diminuir, seu valor de mercado desce, e sua demanda aumenta.;
+		   return "Se o imposto sobre um produto diminuir, seu valor de mercado desce, e sua demanda aumenta.";
 	   }
 	   return null;
    }
