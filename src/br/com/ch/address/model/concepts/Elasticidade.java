@@ -1,6 +1,6 @@
 package br.com.ch.address.model.concepts;
 
-public class Elasticidade {
+public class Elasticidade implements Concepts{
     private final String definicao = "Elasticidade mede a variação percentual de uma variável X " +
             "dado uma variação percentual de uma variável Y.";
 

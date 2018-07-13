@@ -2,7 +2,7 @@ package br.com.ch.address.model.concepts;
 
 import java.util.*;
 
-public class Inflacao {
+public class Inflacao implements Concepts{
 
 	public final String definicao = "A taxa de inflação é o aumento no nível de preços. "
             + "Ou seja, é a média do crescimento dos preços de um conjunto de bens e serviços em um determinado período.";

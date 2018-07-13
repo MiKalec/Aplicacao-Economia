@@ -1,6 +1,6 @@
 package br.com.ch.address.model.concepts;
 
-public class Imposto {
+public class Imposto implements Concepts {
 	//private Double valorPorcentagem;
     //outros atributos e mÃ©todos
     
@@ -28,19 +28,14 @@ public class Imposto {
     	
     	case "aumenta":
     		//curva de Laffer
-    		return "Aumentar a alíquota dos impostos, até certo nível, aumenta a arrecadação do governo. A partir desse nível, novos aumentos da alíquota passam a gerar menor arrecadação. Esse efeito é a chamada curva de Laffer.";
+    		return "Aumentar a alíquota dos impostos, até certo nível, aumenta a arrecadação do governo. A partir desse" +
+					" nível, novos aumentos da alíquota passam a gerar menor arrecadação. Esse efeito é a chamada curva de Laffer.";
     	case "diminui":
     		//equivalência ricardiana
-    		return "Caso o governo diminua a taxa de impostos e mantenha os gastos, acumulará dívidas e terá um déficit. Assim, inevitavelmente será necessário no futuro o aumento da alíquota.";
+    		return "Caso o governo diminua a taxa de impostos e mantenha os gastos, acumulará dívidas e terá um déficit." +
+					" Assim, inevitavelmente será necessário no futuro o aumento da alíquota.";
     	}
     	return null;
     }
-    
-    //public Double getValorPorcentagem() {
-    //    return valorPorcentagem;
-    //}
 
-    //public void setValorPorcentagem(Double valorPorcentagem) {
-    //   this.valorPorcentagem = valorPorcentagem;
-    //}
 }

@@ -1,6 +1,6 @@
 package br.com.ch.address.model.concepts;
 
-public class Oferta {
+public class Oferta implements Concepts{
     Demanda demanda = new Demanda();
     public final String definicao = "Oferta eh a quantidade de um produto ou servico disponivel para compra."
             +" A oferta varia nao soh com a demanda, mas tambem com fatores que influenciam o preco dela."

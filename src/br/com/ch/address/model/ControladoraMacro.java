@@ -1,6 +1,6 @@
 package br.com.ch.address.model;
 
-public class CalculadoraMacro {
+public class ControladoraMacro {
 
     //implementar métodos de macroeconomia
 

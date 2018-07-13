@@ -1,6 +1,6 @@
 package br.com.ch.address.model.concepts;
 @SuppressWarnings("all")
-public class Demanda {
+public class Demanda implements Concepts{
 
     private final String definicao = "Demanda é um conceito subjetivo sobre a quantidade requerida de" +
             " uma produção qualquer. A Demanda é definida pelo consumidor e diversos fatores podem " +
